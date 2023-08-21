@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/** Universal styling **/
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/** App Component styling **/
+
+.app-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: grey;
+  padding: 30px;
+}
+.app-container h1{
+  margin-bottom: -6px;
+}
+.underline{
+  background-color: rgba(19, 217, 247);
+  height: 5px;
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+/** Card container **/
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  max-width: 50vw;
+  width: 100%;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 10px;
+}
+.card-container:hover{
+  box-shadow: 0px 0px 18px black;
+  transition: 0.2s all;
+}
+.image-container{
+  position: absolute;
+  left: 20px;
+  top:-50px;
+}
+.card-container div img{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+.imageBackground{
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  background-color: rgba(19, 217, 247);
+  top: 0px;
+  left: 8px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.name{
+  font-weight: bolder;
+  font-size: larger;
+  text-transform: capitalize;
+}
+.name + p{
+  color: rgba(19, 217, 247);
+  text-transform: uppercase;
+  font-size: small;
+  opacity: 0.6;
+}
+.font{
+  color: rgba(19, 217, 247);
+  font-size: larger;
+}
+
+.button-container{
+  display: flex;
+  gap: 10px;
+}
+.button-container button{
+  background-color:inherit;
+  border: none;
+  cursor: pointer;
+  color: rgba(19, 217, 247);
+  font-size: large;
+  user-select: none;
+}
+.button-container button:active{
+  transform: scale(0.8);
+  transition: all 0.2s;
+}
+.surprise-button{
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background-color: rgba(19, 217, 247);
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+.surprise-button:active{
+  transform: scale(0.9);
+  transition: all 0.2s;
+}
